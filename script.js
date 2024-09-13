@@ -44,3 +44,4 @@ getFooter.style.backgroundColor = "#222934";
 let getInputBorder = document.getElementById("inputBorder");
 
 getInputBorder.style.border = "1px solid #E1D9D1";
+
