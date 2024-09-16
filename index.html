@@ -12,6 +12,7 @@
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 
+
 </head>
 
 <body>
@@ -38,8 +39,7 @@
 
 
 
-    <header
-      class="sticky-lg-top rounded-5 bg-white container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header  class="sticky-lg-top  rounded-5 bg-white container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <div class="col-md-3 mb-2 mb-md-0">
         <a class="navbar-brand fs-3 fw-bold" href="#">Cartzilla </a>
       </div>
@@ -53,9 +53,16 @@
 
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="d-flex justify-content-evenly  align-items-center col-md-3 text-end">
         <iconify-icon class="mx-2" icon="entypo:light-up"></iconify-icon>
-        <iconify-icon class="mx-2" icon="iconoir:add-to-cart"></iconify-icon>
+    
+
+      <div class="nav position-relative">
+        <a href="./cart.html"><iconify-icon class="btn fs-5  text-white bg-primary" type="button" data-bs-toggle="offcanvas" 
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"  
+          icon="iconoir:add-to-cart">
+</iconify-icon> <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span></a>
+      </div>
         <iconify-icon class="mx-2" icon="uiw:search"></iconify-icon>
       </div>
     </header>
@@ -150,76 +157,80 @@
     <hr>
   </div>
 
+
+
+ 
+
+
+
   <!-- hero-cards -sec -->
-
-
   <div class="container my-5">
-
     <div class="row d-flex justify-content-between">
-
+  
       <!-- card 1 -->
       <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="container text-lg-start  text-center">
+        <div class="container text-lg-start text-center">
           <img class="w-75" src="./imgs/hero-1.png" alt="1">
           <p>Bed frame light gray 140x200 cm</p>
           <h6>$760.00</h6>
-
           <div class="d-flex mt-4 align-items-center mx-lg-0 mx-5">
-            <button class="bg-black text-white w-75 py-2  border-0 rounded-5 fw-bold">Add to Cart</button> &nbsp;&nbsp;
+            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold addToCartBtn" id="addToCartBtn">Add to Cart</button>
+            &nbsp;&nbsp;
             <iconify-icon class="fs-3" icon="ph:heart-light"></iconify-icon>
           </div>
         </div>
       </div>
-
-
+  
       <!-- card 2 -->
       <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="container text-lg-start  text-center">
-          <img class="w-75" src="./imgs/hero-2.png" alt="1">
+        <div class="container text-lg-start text-center">
+          <img class="w-75" src="./imgs/hero-2.png" alt="2">
           <p>Blue armchair with iron legs</p>
           <h6>$220.00</h6>
-
           <div class="d-flex mt-4 align-items-center mx-lg-0 mx-5">
-            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold">Add to Cart</button> &nbsp;&nbsp;
+            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold addToCartBtn">Add to Cart</button>
+            &nbsp;&nbsp;
             <iconify-icon class="fs-3" icon="ph:heart-light"></iconify-icon>
           </div>
         </div>
       </div>
-
-
+  
       <!-- card 3 -->
       <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="container text-lg-start  text-center">
-          <img class="w-75" src="./imgs/hero-3.png" alt="1">
+        <div class="container text-lg-start text-center">
+          <img class="w-75" src="./imgs/hero-3.png" alt="3">
           <p>Loft-style lamp width 120x80 cm</p>
           <h6>$140.00</h6>
-
           <div class="d-flex mt-4 align-items-center mx-lg-0 mx-5">
-            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold">Add to Cart</button> &nbsp;&nbsp;
+            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold addToCartBtn">Add to Cart</button>
+            &nbsp;&nbsp;
             <iconify-icon class="fs-3" icon="ph:heart-light"></iconify-icon>
           </div>
         </div>
       </div>
-
-
+  
       <!-- card 4 -->
       <div class="col-lg-3 col-md-6 col-sm-6">
-        <div class="container text-lg-start  text-center">
-          <img class="w-75" src="./imgs/hero-4.png" alt="1">
-          <p>Armchair with wooden legs </p>
+        <div class="container text-lg-start text-center">
+          <img class="w-75" src="./imgs/hero-4.png" alt="4">
+          <p>Armchair with wooden legs</p>
           <h6>$320.50</h6>
-
           <div class="d-flex mt-4 align-items-center mx-lg-0 mx-5">
-            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold">Add to Cart</button> &nbsp;&nbsp;
+            <button class="bg-black text-white w-75 py-2 border-0 rounded-5 fw-bold addToCartBtn">Add to Cart</button>
+            &nbsp;&nbsp;
             <iconify-icon class="fs-3" icon="ph:heart-light"></iconify-icon>
           </div>
         </div>
       </div>
-
-
+  
     </div>
   </div>
+  
 
+
+
+
+  
 
   <br><br>
 
@@ -485,6 +496,9 @@
     </footer>
   </div>
 </div>
+
+
+
 
 
 

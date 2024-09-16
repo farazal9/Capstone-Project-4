@@ -1,4 +1,7 @@
 
+
+// styling
+
 let getcardText = document.querySelectorAll("#cardText");
 
 for(let i = 0; i<getcardText.length; i++){
@@ -45,3 +48,28 @@ let getInputBorder = document.getElementById("inputBorder");
 
 getInputBorder.style.border = "1px solid #E1D9D1";
 
+
+
+
+
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+document.querySelectorAll('.addToCartBtn').forEach((btn) => {
+  btn.addEventListener('click', function() {
+    // Get product info from the card
+    let productCard = btn.closest('.container');
+    let productName = productCard.querySelector('p').innerText;
+    let productPrice = productCard.querySelector('h6').innerText;
+
+    // Add the product to cart
+    cartItems.push({
+      name: productName,
+      price: productPrice
+    });
+
+    // Save updated cart to localStorage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+    alert(`${productName} has been added to your cart!`);
+  });
+});
