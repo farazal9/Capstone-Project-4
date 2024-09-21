@@ -73,3 +73,8 @@ document.querySelectorAll('.addToCartBtn').forEach((btn) => {
     alert(`${productName} has been added to your cart!`);
   });
 });
+
+
+
+
+
